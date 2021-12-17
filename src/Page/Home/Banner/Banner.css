@@ -1,0 +1,20 @@
+.banner{ 
+	background: url("https://i.ibb.co/g6CnYZm/image.png") no-repeat center;
+    background-size: cover;
+	min-height: 670px;
+    position: relative;
+}
+
+
+/* banner background color  */
+.bg-color{
+    background-color: RGBA(12, 11, 11, 0.79);
+	min-height: 670px;
+}
+
+/* banner text border  */
+.text-border{
+	border: 5px solid #5FCF80;
+	display: inline-block;
+	margin-top: 150px;
+}

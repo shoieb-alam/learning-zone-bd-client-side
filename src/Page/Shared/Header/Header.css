@@ -1,0 +1,21 @@
+/* brand logo  */
+.brand{
+    font-family: 'Dosis', sans-serif;
+    color: #5FCF80;
+}
+.brand:hover{
+    color: black;
+}
+
+.login-btn{
+	background-color:#5FCF80;
+	border-radius: 25px;
+	color: #fff !important;
+	border: 1px solid #5FCF80;
+}
+
+.login-btn:hover{
+    border: 1px solid #5FCF80;
+	background-color: #fff;
+	color: #5FCF80 !important;
+}
