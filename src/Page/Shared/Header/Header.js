@@ -31,7 +31,7 @@ const Header = () => {
                             {/* showing dashboard in the navbar if the user logged in  */}
                             {user?.email ?
                                 <>
-                                    <NavDropdown title="Dashboard" menuVariant="success" className="btn-outline-success rounded-pill px-1 mx-2" id="basic-nav-dropdown">
+                                    <NavDropdown title="Dashboard" menuVariant="light" className="login-btn px-1 mx-2" id="basic-nav-dropdown">
                                         {!admin &&
                                             <div>
 
@@ -50,7 +50,7 @@ const Header = () => {
                                             </div>
                                         }
 
-                                        <Nav.Link onClick={logout} className="btn-success btn-outline-danger text-white rounded-pill ps-4">Logout {user?.displayName}</Nav.Link>
+                                        <Nav.Link onClick={logout} className="btn btn-outline-danger fw-bold mx-2">Logout {user?.displayName}</Nav.Link>
                                     </NavDropdown>
                                 </>
                                 :

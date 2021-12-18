@@ -21,7 +21,7 @@ const Reviews = () => {
                 </h2>
             </div>
 
-            <Container className="review-bg2">
+            <Container className="review-bg">
                 <Row xs={1} md={2} lg={3}>
                     {
                         reviews.map(review => <Review

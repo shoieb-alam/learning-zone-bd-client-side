@@ -6,37 +6,28 @@ import { Link } from 'react-router-dom';
 import './Course.css';
 
 const Course = ({ course }) => {
-    const { _id, name, price, area, img1, bed, bath, address } = course;
+    const { _id, name, price, description1, img1 } = course;
 
     return (
         // courses card items
         <div className="p-3">
 
             <Card className="card h-100">
-                <Card.Img variant="top" src={img1} className="h-100" />
+                <Card.Img variant="top" src={img1} className="h-100 w-50 mx-auto" />
 
                 <Card.Body>
-                    <Card.Title className="text-start">{name}</Card.Title>
+                    <Card.Title>{name}</Card.Title>
                     <Card.Text>
-                        <div className="d-flex justify-content-around">
+                        <div className="mx-auto">
                             <p>
-                                <FontAwesomeIcon icon={faBed} className="" /> {bed} Bed
-                            </p>
-                            <p className="ps-3">
-                                <FontAwesomeIcon icon={faBath} className="" /> {bath} Bath
-                            </p>
-                            <p className="ps-3">
-                                <FontAwesomeIcon icon={faThLarge} className="" /> {area} sft
+                                {description1}
                             </p>
                         </div>
-                        <div className="d-flex justify-content-between py-3">
-                            <h5 className="text-secondary">
-                                <FontAwesomeIcon icon={faMapMarkedAlt} className="" /> {address}
-                            </h5>
+                        <div className="py-3">
                             <h5 className="text-danger">USD: ${price}</h5>
                         </div>
                         <Link to={`/buying/${_id}`}>
-                            <Button variant="outline-success" className="px-5 rounded-pill">Book Now</Button>
+                            <Button variant="outline-success" className="px-5 rounded-pill">Buy This Course</Button>
                         </Link>
                     </Card.Text>
                 </Card.Body>

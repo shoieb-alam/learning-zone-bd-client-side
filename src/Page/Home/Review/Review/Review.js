@@ -10,8 +10,8 @@ const Review = ({ review }) => {
         // Review Cards 
         <div className="p-3">
 
-            <Card className="card h-100 bg-light">
-                <Card.Img variant="top" src={img} className="w-50 mx-auto" />
+            <Card className="card h-100">
+                <Card.Img variant="top" src={img} className="w-50 mx-auto rounded-circle" />
 
                 <Card.Body>
                     <FontAwesomeIcon icon={faQuoteLeft} className="" />

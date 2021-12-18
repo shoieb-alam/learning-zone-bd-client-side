@@ -4,6 +4,10 @@
 }
 .card:hover{
     padding: 3px;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    box-shadow: 0 0 20px #0eff56;
 }
 .card img{
     border-radius: 20px;

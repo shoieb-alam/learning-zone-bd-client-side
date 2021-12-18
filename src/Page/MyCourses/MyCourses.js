@@ -32,7 +32,7 @@ const MyCourses = () => {
                 courses.map(course => <div key={course._id}>
                     <Row className="m-2 bg-secondary rounded-pill w-75 mx-auto p-3 text-white">
                         <Col>
-                            <h4 className="text-start"> {course.house} </h4>
+                            <h4 className="text-start"> {course.course} </h4>
                         </Col>
                         <Col>
                             <Button variant="outline-danger" className="btn-light" onClick={() => { handleDelete(course.email) }}>Delete</Button>

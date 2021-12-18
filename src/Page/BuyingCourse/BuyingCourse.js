@@ -19,7 +19,7 @@ const BuyingCourse = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post(`http://localhost:5000/boughtcourses`, data)
+        axios.post(`http://localhost:5000/buyings`, data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Course Bought Successfully');
@@ -42,15 +42,17 @@ const BuyingCourse = () => {
 
                 <Row className="py-3 my-2 rounded-3">
                     <Col xs={1} md={6} lg={8} className="bg-light pt-2">
-                        <img className="w-100 pb-3 rounded-3" src={course.img1} alt="" />
+                        <img className="w-100 pb-3 rounded-3" src={course.img3} alt="" />
                         <div>
-                            <h4 className="text-success">{course.heading}</h4>
-                            <p>{course.description}</p>
+                            <h5>{course.description2}</h5>
+                        </div>
+                        <div>
+                            <h5>{course.description3}</h5>
                         </div>
                     </Col>
 
                     <Col xs={1} md={6} lg={4}>
-                        {/* BuyingCourse form  */}
+                        {/* Course Buying form  */}
                         <div className="add-course py-5 mb-5 text-center text-white h-100">
                             <h4>Buy This Course</h4>
                             <form className="" onSubmit={handleSubmit(onSubmit)}>
@@ -63,8 +65,6 @@ const BuyingCourse = () => {
                                 <input defaultValue={course.name} {...register("course", { required: true })} />
 
                                 <input defaultValue={course.price} {...register("price", { required: true })} />
-
-                                <input placeholder="Phone Number" defaultValue="" {...register("phone", { required: true })} />
 
                                 <input type="submit" value="Buy This Course" className="btn-outline-success" />
                             </form>
