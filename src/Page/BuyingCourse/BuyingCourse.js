@@ -12,14 +12,14 @@ const BuyingCourse = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/courses/${courseId}`)
+        fetch(`https://still-spire-11888.herokuapp.com/courses/${courseId}`)
             .then(res => res.json())
             .then(data => setCourse(data));
     }, [courseId])
 
     const onSubmit = data => {
         console.log(data);
-        axios.post(`http://localhost:5000/buyings`, data)
+        axios.post(`https://still-spire-11888.herokuapp.com/buyings`, data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Course Bought Successfully');

@@ -7,7 +7,7 @@ const FeaturedCourses = () => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/courses')
+        fetch('https://still-spire-11888.herokuapp.com/courses')
             .then(res => res.json())
             .then(data => setCourses(data.slice(0, 6)));
     }, [])

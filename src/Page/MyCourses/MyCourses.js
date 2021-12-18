@@ -9,13 +9,13 @@ const MyCourses = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myCourses/${user?.email}`)
+        fetch(`https://still-spire-11888.herokuapp.com/myCourses/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setCourses(data));
     }, [user.email]);
 
     const handleDelete = email => {
-        axios.delete(`http://localhost:5000/myCourses/${user?.email}`)
+        axios.delete(`https://still-spire-11888.herokuapp.com/myCourses/${user?.email}`)
             .then(res => {
                 console.log(res.data.deletedCount);
                 if (res.data.deletedCount > 0) {

@@ -7,13 +7,13 @@ const CourseManaging = () => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/courses`)
+        fetch(`https://still-spire-11888.herokuapp.com/courses`)
             .then(res => res.json())
             .then(data => setCourses(data));
     }, []);
 
     const handleDelete = id => {
-        axios.delete(`http://localhost:5000/courses/${id}`)
+        axios.delete(`https://still-spire-11888.herokuapp.com/courses/${id}`)
             .then(res => {
                 if (res.data.deletedCount > 0) {
                     alert('Are you sure to delete this Bought Course?');
