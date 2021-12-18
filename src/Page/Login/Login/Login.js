@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { Alert, Button, Form, Spinner } from 'react-bootstrap';
+import { Alert, Button, Container, Form, Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Login.css';
@@ -33,9 +33,12 @@ const Login = () => {
 
 
     return (
-        <div className="bg-login body">
-            <div className="p-5 bg-login2">
-                <div className="p-5 mx-auto w-50 text-start bg-light login-card">
+        <div className="body">
+            <Container className="row login-card p-5 m-5 mx-auto">
+                <div className="col-md-6">
+                    <img src="https://i.ibb.co/WkLcSgY/image.png" alt="" />
+                </div>
+                <div className="col-md-6 mx-auto w-50 text-start">
 
                     <Form onSubmit={handleLoginSubmit}>
 
@@ -87,8 +90,8 @@ const Login = () => {
                     <Button as={Link} to="/register" variant="white" type="submit" className="fw-bold mt-4 w-100 mx-auto">Don't have an account? </Button>
 
                 </div>
-            </div>
-        </div>
+            </Container >
+        </div >
     );
 };
 

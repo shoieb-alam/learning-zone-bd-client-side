@@ -14,6 +14,7 @@
 }
 .login-card{
     border-radius: 50px;
+    background-color: #86e9966c;
     border: 2px solid #51e76a;
     box-shadow: 0 0 30px #60e067;
 }

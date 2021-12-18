@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, Button, Form, Spinner } from 'react-bootstrap';
+import { Alert, Button, Container, Form, Spinner } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -26,9 +26,12 @@ const Register = () => {
 
     }
     return (
-        <div className="bg-login body">
-            <div className="p-5 bg-login2">
-                <div className="p-5 mx-auto w-50 text-start bg-light login-card">
+        <div className="body">
+            <Container className="row login-card m-5 mx-auto px-5">
+                <div className="col-md-6">
+                    <img src="https://i.ibb.co/sH7M7XH/image.png" alt="" />
+                </div>
+                <div className="col-md-6 m-auto w-50 text-start">
 
                     {!isLoading && <form onSubmit={handleLoginSubmit}>
                         <h3 className="text-center mb-5">Sign Up</h3>
@@ -93,7 +96,7 @@ const Register = () => {
                     <Button as={Link} to="/login" variant="white" type="submit" className="fw-bold mt-4 w-100">Already have an account? </Button>
 
                 </div>
-            </div>
+            </Container>
         </div>
     );
 };
