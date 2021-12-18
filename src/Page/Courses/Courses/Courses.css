@@ -1,4 +1,12 @@
-.course-bg{
-    background-color: rgba(207, 255, 210, 0.226);
-    border-radius: 20px;
+.courses-bg{
+    background-image: url('https://thumbs.gfycat.com/EarlyAntiqueIbizanhound-max-1mb.gif');
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0 50px;
+}
+
+.courses-header{
+    text-shadow: 0 0 5px rgb(51, 247, 126);
+    color: greenyellow;
+    font-weight: bolder;
 }

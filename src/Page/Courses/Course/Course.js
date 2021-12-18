@@ -1,5 +1,3 @@
-import { faBath, faBed, faThLarge, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';

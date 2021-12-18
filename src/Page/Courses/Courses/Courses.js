@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import Course from '../Course/Course';
 import './Courses.css';
 
@@ -13,15 +13,15 @@ const Courses = () => {
     }, [])
 
     return (
-        <div className="py-5">
+        <div className="courses-bg py-5">
             <div className="py-5">
-                <h3 className="fw-bold">
-                    Exclusive <span className="brand text-success"> COURSES </span>
-                </h3>
+                <h1 className="courses-header">
+                    Exclusive COURSES
+                </h1>
             </div>
 
-            <Container className="course-bg">
-                <Row xs={1} md={2} lg={3}>
+            <div className="course-bg">
+                <Row xs={1} md={2} lg={4}>
                     {
                         courses.map(course => <Course
                             key={course._id}
@@ -29,7 +29,7 @@ const Courses = () => {
                         ></Course>)
                     }
                 </Row>
-            </Container>
+            </div>
         </div>
     );
 };

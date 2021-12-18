@@ -21,7 +21,7 @@ const FeaturedCourses = () => {
                 </p>
             </div>
 
-            <Container className="course-bg">
+            <Container>
                 <Row xs={1} md={2} lg={3}>
                     {
                         courses.map(course => <Course
