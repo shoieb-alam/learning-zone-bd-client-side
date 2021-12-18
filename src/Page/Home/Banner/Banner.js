@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 import './Banner.css';
 
 const Banner = () => {
@@ -15,7 +16,7 @@ const Banner = () => {
                     <p className="fs-5 my-4">An easy and organized way to explore the  world of coding through the window of our website
                     </p>
 
-                    <Button variant="outline-success" size='lg' className="border-3 rounded-pill my-4">GIVE US A SUGGESTION</Button>
+                    <Button as={HashLink} to='/home#footer' variant="outline-success" size='lg' className="border-3 rounded-pill my-4">GIVE US A SUGGESTION</Button>
                 </div>
             </div>
         </div>

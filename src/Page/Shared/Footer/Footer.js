@@ -21,7 +21,7 @@ const Footer = () => {
 
                             <div>
                                 {/* social media icons  */}
-                                <div className="social-media py-4">
+                                <div id="footer" className="social-media py-4">
                                     <a href="https://www.facebook.com/shoieb.ctg"
                                         target="_blank" rel="noreferrer">
                                         <FontAwesomeIcon className="me-4" icon={faFacebookF} size='2x' />
